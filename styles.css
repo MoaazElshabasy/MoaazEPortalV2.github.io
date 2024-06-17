@@ -81,9 +81,10 @@ body {
     color: white;
     margin-left: 5px;
 }
-a:hover{
-color: #DDEEFF;
-text-shadow: 1px 1px 2px cyan, 0 0 1em #01ACAA, 0 0 0.2em #01ACAA;
+
+a:hover {
+    color: #DDEEFF;
+    text-shadow: 1px 1px 2px cyan, 0 0 1em #01ACAA, 0 0 0.2em #01ACAA;
 }
 
 /* Moaaz */
@@ -109,6 +110,17 @@ text-shadow: 1px 1px 2px cyan, 0 0 1em #01ACAA, 0 0 0.2em #01ACAA;
     color: #DDEEFF;
     text-shadow: 1px 1px 2px cyan, 0 0 1em #01ACAA, 0 0 0.2em #01ACAA;
 }
+
+
+@media screen and (max-width: 768px) {
+    .logo, .logo-left {
+        scale: 1.0; 
+        top: 1.5vw; 
+        right: 1.5vw;
+        left: 1.5vw;
+    }
+}
+
 
 
 
@@ -137,12 +149,21 @@ text-shadow: 1px 1px 2px cyan, 0 0 1em #01ACAA, 0 0 0.2em #01ACAA;
 .halfContainer {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap; 
 }
 
 .halfContainerBox {
     width: 37.5%;
     margin: 1%;
 }
+
+@media screen and (max-width: 768px) {
+    .halfContainerBox {
+        width: 100%;
+        margin: 0 0 1% 0; 
+    }
+}
+
 
 /* Moaaz */
 p {
@@ -306,6 +327,26 @@ footer {
     word-wrap: break-word;
     width: 100%; 
 }
+
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+    .icon-item {
+        width: 20vw; /* Adjust the width for smaller screens */
+        height: 20vw; /* Adjust the height for smaller screens */
+        margin: 5px; /* Adjust the margin for smaller screens */
+        padding: 5px; /* Adjust the padding for smaller screens */
+    }
+
+    .icon {
+        width: 10vw; /* Adjust the icon size for smaller screens */
+        height: 10vw; /* Adjust the icon size for smaller screens */
+    }
+
+    .icon-item p {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+}
+
 
 /* Moaaz */
 .custom-bullet-list {
