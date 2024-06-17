@@ -1,0 +1,486 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgb(0,0, 21);
+    background: linear-gradient(180deg, 
+        #000015 20%,
+        #000033 100%); 
+}
+
+
+.imageHeader {
+    width: 100%;
+    max-height: 10%; 
+    overflow: hidden; 
+    position: relative;
+    display: inline-block;
+}
+/* Moaaz */
+.imageHeader img {
+    width: 100%;
+    height: 30vw; 
+    object-fit: cover; 
+    display: block;
+}
+
+.imageHeader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0a0a0a ;
+    background: linear-gradient(to top, rgba(00, 00, 21, 1) 20%, rgba(10, 10, 10, 0) 40%);
+    pointer-events: none;
+}
+
+
+.gradient-opacity {
+    position: relative;
+    display: inline-block;
+}
+
+.gradient-opacity img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.gradient-opacity::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #0a0a0a ;
+    background: linear-gradient(to top, rgba(00, 00, 21, 1) 20%, rgba(10, 10, 10, 0) 40%);
+    pointer-events: none;
+}
+
+/* Moaaz */
+.neon-text {
+  font-family: Palatino, serif;
+  font-size: 20px;
+  color: #DDEEFF;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+}
+
+/* Moaaz */
+.logo {
+    scale: 1.5;
+    position: fixed;
+    top: 2.5vw;
+    right: 2.5vw;
+    z-index: 2;
+}
+
+/* Moaaz */
+.logo a {
+    color: white;
+    margin-left: 5px;
+}
+a:hover{
+color: #DDEEFF;
+text-shadow: 1px 1px 2px cyan, 0 0 1em #01ACAA, 0 0 0.2em #01ACAA;
+}
+
+/* Moaaz */
+.logo-left {
+    scale: 1.5;
+    position: fixed;
+    top: 2.5vw;
+    left: 2.5vw;
+    z-index: 2;
+}
+
+/* Moaaz */
+.logo-left a {
+    color: white;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.logo-left a:hover .logo-img {
+    filter: brightness(0.8);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    color: #DDEEFF;
+    text-shadow: 1px 1px 2px cyan, 0 0 1em #01ACAA, 0 0 0.2em #01ACAA;
+}
+
+
+
+.gif {
+    width: 100%;
+    max-height: 30%; 
+    overflow: hidden; 
+}
+
+
+.gif img {
+    width: 100%;
+    display: block;
+}
+
+/* Moaaz */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 45px;
+}
+
+.halfContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.halfContainerBox {
+    width: 37.5%;
+    margin: 1%;
+}
+
+/* Moaaz */
+p {
+    font-size: 25px;
+    color: white;
+    font-family: monospace;
+}
+/* Moaaz */
+header {
+    margin-top: 75px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.header-with-lines {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.header-with-lines::before,
+.header-with-lines::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #aef;
+}
+
+.header-with-lines::before {
+    margin-right: 10px;
+}
+
+.header-with-lines::after {
+    margin-left: 10px;
+}
+
+/* Moaaz */
+header h1 {
+    color: white;
+    font-size: 2em;
+}
+
+header p {
+    color: white;
+}
+/* Moaaz */
+footer {
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 14px;
+}
+/* Moaaz */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Moaaz */
+.portfolio-item {
+    position: relative;
+    flex-basis: 100%; 
+    height: 400px;
+    margin-bottom: 20px; 
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    opacity: 1;
+    transition: background-color 0.3s ease;
+}
+
+/* Moaaz */
+.overlay-text-detail {
+    font-size: 50px;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+}
+
+/* Moaaz */
+.overlay-text-title {
+    font-size: 50px;
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
+}
+
+.portfolio-item:hover .overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Moaaz */
+.icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0; 
+    margin: 20px; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* Moaaz */
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 6.5vw; 
+    height: 6.5vw;
+    margin: 10px; 
+    padding: 10px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: rgb(0,0, 21); /* Dark color for the brick wall */
+    background: linear-gradient(180deg, 
+        #000015 50%,
+        #000033 100%);
+    transition: transform 0.3s; 
+}
+
+.icon-item:hover {
+    transform: scale(1.05); 
+}
+
+/* Moaaz */
+.icon {
+    width: 4vw; 
+    height: 4vw; 
+    margin-bottom: 5px; 
+}
+
+/* Moaaz */
+.icon-item p {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    word-wrap: break-word;
+    width: 100%; 
+}
+
+/* Moaaz */
+.custom-bullet-list {
+    list-style: none; 
+    padding-left: 20px; 
+    margin: 5vw;
+    margin-top: 2vw;
+
+}
+
+/* Moaaz */
+.custom-bullet-list li {
+    position: relative; 
+    margin-bottom: 10px; 
+    padding-left: 20px; 
+    color: white ;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+/* Moaaz */
+.custom-bullet-list li::before {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 8px; 
+    height: 8px; 
+    border-radius: 50%; 
+    background-color: #3498db;
+}
+
+/* Moaaz */
+.horizontal-bullet-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 1vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Moaaz */
+.horizontal-bullet-list li {
+    position: relative;
+    margin-right: 20px;
+    padding-left: 20px;
+    color: white ;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+/* Moaaz */
+.horizontal-bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #3498db;
+
+}
+
+/* Moaaz */
+.logo-link {
+    position: fixed;
+    top: 2.5vw;
+    left: 2.5vw;
+    z-index: 2;
+    scale: 1.5;
+}
+
+/* Moaaz */
+.logo-img {
+    width: 50px;
+    height: auto; 
+    border-radius: 50%; 
+}
+
+.logo-img:hover {
+    color: #DDEEFF;
+    text-shadow: 1px 1px 2px cyan, 0 0 1em #01ACAA, 0 0 0.2em #01ACAA;
+}
+
+
+.gallery-container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 2vw auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    border: 2px solid #ccc;
+    border-radius: 2vw;
+    background-color: #000020;
+}
+
+
+/* Moaaz */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    margin-left:0 ;
+    margin-right: 0;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .gallery-item {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+.neonLine {
+    display: flex;
+    justify-content: center; 
+    margin: 0;
+}
+.noenHr {
+    border: none;
+    height: 2px;
+    background-color: blue; 
+    width: 50%; 
+    margin: 0 auto; 
+}
+.video-container {
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    max-height: 800px;
+    margin: 2vw auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+    border: 2px solid #ccc;
+    border-radius: 2vw;
+    background-color: #000020;
+ }
+ video {
+    width: 75%;
+    height: auto;
+    max-width: 75%;
+    display: block;
+    margin: 20px auto;
+}
