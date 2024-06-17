@@ -156,12 +156,15 @@ a:hover {
 .halfContainerBox {
     width: 37.5%;
     margin: 1%;
+    margin-left: 5%;
 }
 
 @media screen and (max-width: 768px) {
     .halfContainerBox {
         width: 100%;
-        margin: 0 0 1% 0; 
+        margin: 0 0 1% 0;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
     }
 }
 
@@ -281,11 +284,11 @@ footer {
 /* Media query for smaller devices */
 @media screen and (max-width: 768px) {
     .portfolio-item {
-        height: 300px; /* Adjust the height for smaller screens */
+        height: 200px; /* Adjust the height for smaller screens */
     }
 
     .overlay-text-detail, .overlay-text-title {
-        font-size: 30px; /* Adjust the font size for smaller screens */
+        font-size: 20px; /* Adjust the font size for smaller screens */
     }
 }
 
