@@ -117,12 +117,13 @@ a:hover {
         scale: 1.0; 
         top: 1.5vw; 
         right: 1.5vw;
+    }
+    .logo, .logo-left {
+        scale: 1.0; 
+        top: 1.5vw; 
         left: 1.5vw;
     }
 }
-
-
-
 
 .gif {
     width: 100%;
@@ -277,6 +278,18 @@ footer {
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* Media query for smaller devices */
+@media screen and (max-width: 768px) {
+    .portfolio-item {
+        height: 300px; /* Adjust the height for smaller screens */
+    }
+
+    .overlay-text-detail, .overlay-text-title {
+        font-size: 30px; /* Adjust the font size for smaller screens */
+    }
+}
+
+
 /* Moaaz */
 .icon-list {
     display: flex;
@@ -331,19 +344,19 @@ footer {
 /* Media query for smaller devices */
 @media screen and (max-width: 768px) {
     .icon-item {
-        width: 20vw; /* Adjust the width for smaller screens */
-        height: 20vw; /* Adjust the height for smaller screens */
-        margin: 5px; /* Adjust the margin for smaller screens */
-        padding: 5px; /* Adjust the padding for smaller screens */
+        width: 20vw; 
+        height: 20vw;
+        margin: 5px; 
+        padding: 5px; 
     }
 
     .icon {
-        width: 10vw; /* Adjust the icon size for smaller screens */
-        height: 10vw; /* Adjust the icon size for smaller screens */
+        width: 10vw;
+        height: 10vw; 
     }
 
     .icon-item p {
-        font-size: 14px; /* Adjust the font size for smaller screens */
+        font-size: 14px; 
     }
 }
 
