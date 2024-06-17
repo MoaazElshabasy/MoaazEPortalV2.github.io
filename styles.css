@@ -113,12 +113,12 @@ a:hover {
 
 
 @media screen and (max-width: 768px) {
-    .logo, .logo-left {
+    .logo {
         scale: 1.0; 
         top: 1.5vw; 
         right: 1.5vw;
     }
-    .logo, .logo-left {
+    .logo-left {
         scale: 1.0; 
         top: 1.5vw; 
         left: 1.5vw;
