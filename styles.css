@@ -364,39 +364,36 @@ footer {
 }
 
 
-/* Moaaz */
+/* Base styles for custom bullet list */
 .custom-bullet-list {
-    list-style: none; 
-    padding-left: 20px; 
+    list-style: none;
+    padding-left: 20px;
     margin: 5vw;
     margin-top: 2vw;
-
 }
 
-/* Moaaz */
 .custom-bullet-list li {
-    position: relative; 
-    margin-bottom: 10px; 
-    padding-left: 20px; 
-    color: white ;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    color: white;
     font-family: monospace;
     font-size: 20px;
 }
 
-/* Moaaz */
 .custom-bullet-list li::before {
-    content: ''; 
-    position: absolute; 
-    left: 0; 
-    top: 50%; 
-    transform: translateY(-50%); 
-    width: 8px; 
-    height: 8px; 
-    border-radius: 50%; 
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
     background-color: #3498db;
 }
 
-/* Moaaz */
+/* Base styles for horizontal bullet list */
 .horizontal-bullet-list {
     display: flex;
     list-style: none;
@@ -406,17 +403,15 @@ footer {
     flex-wrap: wrap;
 }
 
-/* Moaaz */
 .horizontal-bullet-list li {
     position: relative;
     margin-right: 20px;
     padding-left: 20px;
-    color: white ;
+    color: white;
     font-family: monospace;
     font-size: 20px;
 }
 
-/* Moaaz */
 .horizontal-bullet-list li::before {
     content: '';
     position: absolute;
@@ -427,8 +422,85 @@ footer {
     height: 8px;
     border-radius: 50%;
     background-color: #3498db;
-
 }
+
+/* Media queries for responsiveness */
+
+/* Styles for small screens (less than 600px) */
+@media (max-width: 600px) {
+    .custom-bullet-list {
+        padding-left: 10px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .custom-bullet-list li {
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    .horizontal-bullet-list {
+        margin: 5px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .horizontal-bullet-list li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+}
+
+/* Styles for medium screens (600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .custom-bullet-list {
+        padding-left: 15px;
+        margin: 4vw;
+        font-size: 18px;
+    }
+
+    .custom-bullet-list li {
+        font-size: 18px;
+        padding-left: 18px;
+    }
+
+    .horizontal-bullet-list {
+        margin: 2vw;
+        justify-content: space-around;
+    }
+
+    .horizontal-bullet-list li {
+        font-size: 18px;
+        padding-left: 18px;
+    }
+}
+
+/* Styles for large screens (greater than 900px) */
+@media (min-width: 901px) {
+    .custom-bullet-list {
+        padding-left: 20px;
+        margin: 5vw;
+        font-size: 20px;
+    }
+
+    .custom-bullet-list li {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .horizontal-bullet-list {
+        margin: 1vw;
+        justify-content: center;
+    }
+
+    .horizontal-bullet-list li {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+}
+
 
 /* Moaaz */
 .logo-link {
