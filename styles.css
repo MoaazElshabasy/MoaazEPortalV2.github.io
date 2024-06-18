@@ -624,7 +624,7 @@ footer {
 
 @media (max-width: 600px) {
     #responsive-paragraph , .blueParagraph {
-        font-size: 10px;
+        font-size: 12px;
         text-align: center;
     }
 }
