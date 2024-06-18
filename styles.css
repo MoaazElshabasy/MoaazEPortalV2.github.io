@@ -589,7 +589,8 @@ footer {
 .responsive-paragraph {
     font-size: 20px;
     text-align: left;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .blueParagraph {
@@ -598,21 +599,21 @@ footer {
 
 
 @media (max-width: 600px) {
-    #responsive-paragraph , .blueParagraph {
+    #responsive-paragraph {
         font-size: 14px;
         text-align: center;
     }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-    #responsive-paragraph, .blueParagraph {
+    #responsive-paragraph {
         font-size: 22px;
         text-align: right;
     }
 }
 
 @media (min-width: 901px) {
-    #responsive-paragraph , .blueParagraph {
+    #responsive-paragraph{
         font-size: 24px;
         text-align: justify;
     }
