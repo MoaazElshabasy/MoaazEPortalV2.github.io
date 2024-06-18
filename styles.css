@@ -615,7 +615,7 @@ footer {
 }
 
 
-#responsive-paragraph {
+.responsive-paragraph {
     font-size: 16px;
     text-align: left;
     padding: 10px;
@@ -644,9 +644,9 @@ footer {
 }
 
 .blueParagraph {
-    style="font-size: 25px; 
-    text-shadow: none; 
-    color: #00AADD; 
-    margin-top: 0; 
+    font-size: 25px;
+    text-shadow: none;
+    color: #00AADD;
+    margin-top: 0;
     padding-bottom: 0;
 }
