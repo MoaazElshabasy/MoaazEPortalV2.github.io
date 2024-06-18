@@ -623,22 +623,30 @@ footer {
 }
 
 @media (max-width: 600px) {
-    #responsive-paragraph {
+    #responsive-paragraph , .blueParagraph {
         font-size: 10px;
         text-align: center;
     }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-    #responsive-paragraph {
+    #responsive-paragraph, .blueParagraph {
         font-size: 18px;
         text-align: right;
     }
 }
 
 @media (min-width: 901px) {
-    #responsive-paragraph {
+    #responsive-paragraph , .blueParagraph {
         font-size: 20px;
         text-align: justify;
     }
+}
+
+.blueParagraph {
+    style="font-size: 25px; 
+    text-shadow: none; 
+    color: #00AADD; 
+    margin-top: 0; 
+    padding-bottom: 0;
 }
